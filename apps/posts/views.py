@@ -22,5 +22,5 @@ class PostDetailView(DetailView):
     model = Post
     template_name = 'posts/posts_individual.html'
     context_object_name = 'post'
-    pk_url_kwarg = 'id'
+    pk_url_kwarg = 'pk'
     queryset = Post.objects.all()
